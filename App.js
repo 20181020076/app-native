@@ -1,13 +1,13 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import Header from './src/components/Header';
-import StartGameScreen from './src/screens/StartGameScreen';
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View, FlatList } from "react-native";
+import Header from "./src/components/Header";
+import StartGameScreen from "./src/screens/StartGameScreen";
 export default function App() {
   return (
-    <View style={styles.header}>
+    <View style={styles.container}>
       <StatusBar style="auto" />
-      <Header title={'Adivina el numero'}/>
-      <StartGameScreen/>
+      <Header title={"Adivina el numero"} />
+      <StartGameScreen />
     </View>
   );
 }
